@@ -18,6 +18,11 @@
 		BA69A1B724B9E10E0053C135 /* ecomerce_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69A1B624B9E10E0053C135 /* ecomerce_iOSTests.swift */; };
 		BA69A1C224B9E10E0053C135 /* ecomerce_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69A1C124B9E10E0053C135 /* ecomerce_iOSUITests.swift */; };
 		BA69A1D724B9EB800053C135 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69A1D624B9EB800053C135 /* LoginViewController.swift */; };
+		BA69A1E424B9FB9A0053C135 /* ProductAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69A1E324B9FB9A0053C135 /* ProductAPITest.swift */; };
+		BA69A1E624B9FBAE0053C135 /* ProductAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69A1E524B9FBAE0053C135 /* ProductAPI.swift */; };
+		BA69A1E824B9FCDA0053C135 /* GetProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69A1E724B9FCDA0053C135 /* GetProductTests.swift */; };
+		BA69A1EA24B9FCF30053C135 /* GetProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69A1E924B9FCF30053C135 /* GetProduct.swift */; };
+		BA69A1EC24B9FDF80053C135 /* Observable+GetEmit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69A1EB24B9FDF80053C135 /* Observable+GetEmit.swift */; };
 		F7FBD70DC1A79FA0B89764D6 /* Pods_ecomerce_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B7035D7E46FF6C5CFF6C46 /* Pods_ecomerce_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +67,11 @@
 		BA69A1C124B9E10E0053C135 /* ecomerce_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ecomerce_iOSUITests.swift; sourceTree = "<group>"; };
 		BA69A1C324B9E10E0053C135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA69A1D624B9EB800053C135 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BA69A1E324B9FB9A0053C135 /* ProductAPITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAPITest.swift; sourceTree = "<group>"; };
+		BA69A1E524B9FBAE0053C135 /* ProductAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductAPI.swift; sourceTree = "<group>"; };
+		BA69A1E724B9FCDA0053C135 /* GetProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductTests.swift; sourceTree = "<group>"; };
+		BA69A1E924B9FCF30053C135 /* GetProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProduct.swift; sourceTree = "<group>"; };
+		BA69A1EB24B9FDF80053C135 /* Observable+GetEmit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+GetEmit.swift"; sourceTree = "<group>"; };
 		C8B7035D7E46FF6C5CFF6C46 /* Pods_ecomerce_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecomerce_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -160,6 +170,8 @@
 		BA69A1B524B9E10E0053C135 /* ecomerce-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				BA69A1E224B9FB760053C135 /* Unit Tests */,
+				BA69A1E124B9FB6A0053C135 /* Integration Test */,
 				BA69A1B624B9E10E0053C135 /* ecomerce_iOSTests.swift */,
 				BA69A1B824B9E10E0053C135 /* Info.plist */,
 			);
@@ -193,6 +205,7 @@
 		BA69A1D124B9E5540053C135 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				BA69A1E924B9FCF30053C135 /* GetProduct.swift */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -216,6 +229,7 @@
 		BA69A1D424B9E57F0053C135 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				BA69A1EB24B9FDF80053C135 /* Observable+GetEmit.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -223,8 +237,25 @@
 		BA69A1D524B9E58B0053C135 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				BA69A1E524B9FBAE0053C135 /* ProductAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		BA69A1E124B9FB6A0053C135 /* Integration Test */ = {
+			isa = PBXGroup;
+			children = (
+				BA69A1E724B9FCDA0053C135 /* GetProductTests.swift */,
+			);
+			path = "Integration Test";
+			sourceTree = "<group>";
+		};
+		BA69A1E224B9FB760053C135 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BA69A1E324B9FB9A0053C135 /* ProductAPITest.swift */,
+			);
+			path = "Unit Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,8 +517,11 @@
 			files = (
 				BA69A1D724B9EB800053C135 /* LoginViewController.swift in Sources */,
 				BA69A1A424B9E10C0053C135 /* ViewController.swift in Sources */,
+				BA69A1EC24B9FDF80053C135 /* Observable+GetEmit.swift in Sources */,
 				BA69A1A024B9E10C0053C135 /* AppDelegate.swift in Sources */,
 				BA69A1A224B9E10C0053C135 /* SceneDelegate.swift in Sources */,
+				BA69A1EA24B9FCF30053C135 /* GetProduct.swift in Sources */,
+				BA69A1E624B9FBAE0053C135 /* ProductAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +529,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA69A1E424B9FB9A0053C135 /* ProductAPITest.swift in Sources */,
+				BA69A1E824B9FCDA0053C135 /* GetProductTests.swift in Sources */,
 				BA69A1B724B9E10E0053C135 /* ecomerce_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
