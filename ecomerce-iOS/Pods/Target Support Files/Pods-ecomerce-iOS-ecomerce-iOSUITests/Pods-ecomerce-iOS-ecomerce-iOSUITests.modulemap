@@ -1,0 +1,6 @@
+framework module Pods_ecomerce_iOS_ecomerce_iOSUITests {
+  umbrella header "Pods-ecomerce-iOS-ecomerce-iOSUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
