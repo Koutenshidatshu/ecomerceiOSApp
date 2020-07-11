@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,7 @@
 		BA69A1AC24B9E10E0053C135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA69A1AA24B9E10E0053C135 /* LaunchScreen.storyboard */; };
 		BA69A1B724B9E10E0053C135 /* ecomerce_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69A1B624B9E10E0053C135 /* ecomerce_iOSTests.swift */; };
 		BA69A1C224B9E10E0053C135 /* ecomerce_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69A1C124B9E10E0053C135 /* ecomerce_iOSUITests.swift */; };
+		BA69A1D724B9EB800053C135 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA69A1D624B9EB800053C135 /* LoginViewController.swift */; };
 		F7FBD70DC1A79FA0B89764D6 /* Pods_ecomerce_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B7035D7E46FF6C5CFF6C46 /* Pods_ecomerce_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		BA69A1BD24B9E10E0053C135 /* ecomerce-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ecomerce-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA69A1C124B9E10E0053C135 /* ecomerce_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ecomerce_iOSUITests.swift; sourceTree = "<group>"; };
 		BA69A1C324B9E10E0053C135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA69A1D624B9EB800053C135 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8B7035D7E46FF6C5CFF6C46 /* Pods_ecomerce_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecomerce_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -111,7 +113,6 @@
 				A6D2928469D971FA0D5B94B7 /* Pods-ecomerce-iOSTests.debug.xcconfig */,
 				1BEEC9E8759492907E69A56F /* Pods-ecomerce-iOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +141,11 @@
 		BA69A19E24B9E10C0053C135 /* ecomerce-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BA69A1D324B9E5660053C135 /* Public */,
+				BA69A1D224B9E55A0053C135 /* ViewModel */,
+				BA69A1D124B9E5540053C135 /* Adapter */,
+				BA69A1D024B9E54A0053C135 /* Interactor */,
+				BA69A1CF24B9E5420053C135 /* View */,
 				BA69A19F24B9E10C0053C135 /* AppDelegate.swift */,
 				BA69A1A124B9E10C0053C135 /* SceneDelegate.swift */,
 				BA69A1A324B9E10C0053C135 /* ViewController.swift */,
@@ -167,6 +173,58 @@
 				BA69A1C324B9E10E0053C135 /* Info.plist */,
 			);
 			path = "ecomerce-iOSUITests";
+			sourceTree = "<group>";
+		};
+		BA69A1CF24B9E5420053C135 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA69A1D624B9EB800053C135 /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA69A1D024B9E54A0053C135 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BA69A1D124B9E5540053C135 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		BA69A1D224B9E55A0053C135 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BA69A1D324B9E5660053C135 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				BA69A1D524B9E58B0053C135 /* API */,
+				BA69A1D424B9E57F0053C135 /* Util */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		BA69A1D424B9E57F0053C135 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		BA69A1D524B9E58B0053C135 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA69A1D724B9EB800053C135 /* LoginViewController.swift in Sources */,
 				BA69A1A424B9E10C0053C135 /* ViewController.swift in Sources */,
 				BA69A1A024B9E10C0053C135 /* AppDelegate.swift in Sources */,
 				BA69A1A224B9E10C0053C135 /* SceneDelegate.swift in Sources */,
