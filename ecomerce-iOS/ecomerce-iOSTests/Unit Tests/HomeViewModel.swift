@@ -51,3 +51,10 @@ class HomeViewModel {
     }
     
 }
+
+struct HomeViewModelFactory {
+    static func create() -> HomeViewModel {
+        let provider = ProductProviderFactory.create()
+        return HomeViewModel(provider: provider)
+    }
+}

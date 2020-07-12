@@ -9,7 +9,8 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    private let viewModel = HomeViewModelFactory.create()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red

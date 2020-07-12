@@ -25,3 +25,9 @@ struct ProductProviderImpl: ProductProvider {
         return requester.request().asObservable()
     }
 }
+
+struct ProductProviderFactory {
+    static func create() -> ProductProvider {
+        return ProductProviderImpl(service: GetProductImpl())
+    }
+}
