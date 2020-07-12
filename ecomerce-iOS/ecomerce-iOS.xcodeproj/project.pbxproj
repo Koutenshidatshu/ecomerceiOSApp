@@ -32,6 +32,8 @@
 		BA84817E24BB31B600AC9693 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA84817C24BB31B600AC9693 /* HomeViewController.xib */; };
 		BA84818024BB728200AC9693 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA84817F24BB728200AC9693 /* HomeViewModelTest.swift */; };
 		BA84818224BB729A00AC9693 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA84818124BB729A00AC9693 /* HomeViewModel.swift */; };
+		BA84818524BB866600AC9693 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA84818324BB866600AC9693 /* CategoryCollectionViewCell.swift */; };
+		BA84818624BB866600AC9693 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA84818424BB866600AC9693 /* CategoryCollectionViewCell.xib */; };
 		F7FBD70DC1A79FA0B89764D6 /* Pods_ecomerce_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B7035D7E46FF6C5CFF6C46 /* Pods_ecomerce_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,8 @@
 		BA84817C24BB31B600AC9693 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		BA84817F24BB728200AC9693 /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
 		BA84818124BB729A00AC9693 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = "ecomerce-iOSTests/Unit Tests/HomeViewModel.swift"; sourceTree = SOURCE_ROOT; };
+		BA84818324BB866600AC9693 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA84818424BB866600AC9693 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		C8B7035D7E46FF6C5CFF6C46 /* Pods_ecomerce_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecomerce_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -212,6 +216,8 @@
 				BA84817724BB27AE00AC9693 /* TabBarViewController.swift */,
 				BA84817B24BB31B600AC9693 /* HomeViewController.swift */,
 				BA84817C24BB31B600AC9693 /* HomeViewController.xib */,
+				BA84818324BB866600AC9693 /* CategoryCollectionViewCell.swift */,
+				BA84818424BB866600AC9693 /* CategoryCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA69A1AC24B9E10E0053C135 /* LaunchScreen.storyboard in Resources */,
+				BA84818624BB866600AC9693 /* CategoryCollectionViewCell.xib in Resources */,
 				BA69A1A924B9E10E0053C135 /* Assets.xcassets in Resources */,
 				BA69A1A724B9E10C0053C135 /* Main.storyboard in Resources */,
 				BA84817E24BB31B600AC9693 /* HomeViewController.xib in Resources */,
@@ -549,6 +556,7 @@
 				BA84817824BB27AE00AC9693 /* TabBarViewController.swift in Sources */,
 				BA69A1EC24B9FDF80053C135 /* Observable+GetEmit.swift in Sources */,
 				BA69A1A024B9E10C0053C135 /* AppDelegate.swift in Sources */,
+				BA84818524BB866600AC9693 /* CategoryCollectionViewCell.swift in Sources */,
 				BA69A1A224B9E10C0053C135 /* SceneDelegate.swift in Sources */,
 				BA84818224BB729A00AC9693 /* HomeViewModel.swift in Sources */,
 				BA69A1EA24B9FCF30053C135 /* GetProduct.swift in Sources */,
