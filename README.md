@@ -8,4 +8,4 @@
 
 > Using RXSwift
 
-> Using Unitest
+> Using Unitest for handling any posibilitys & UiTest for performance test
