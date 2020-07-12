@@ -1,7 +1,8 @@
 # ecomerceiOSApp
 
 Ecomerce iOS APP 
-Using MVVMI Architecture
-Using Clean code
-Using RXSwift
-Using Unitest
+
+> Using MVVMI Architecture
+> Using Clean code
+> Using RXSwift
+> Using Unitest
