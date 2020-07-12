@@ -50,6 +50,14 @@ class HomeViewModel {
         return products.first?.productPromo[index]
     }
     
+    func didSelectCategory(at index: Int) -> Category? {
+        return products.first?.category[index]
+    }
+    
+    func didSelectPromo(at index: Int) -> ProductPromo? {
+        return products.first?.productPromo[index]
+    }
+    
 }
 
 struct HomeViewModelFactory {

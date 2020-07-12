@@ -56,6 +56,9 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.getCategoryItemCount()
     }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let category = viewModel.didSelectCategory(at: indexPath.row)
+    }
 }
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
@@ -69,6 +72,8 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         return cell ?? UITableViewCell()
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let promo = viewModel.didSelectPromo(at: indexPath.row)
+    }
 }
 
