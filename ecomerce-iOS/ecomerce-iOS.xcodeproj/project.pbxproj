@@ -30,6 +30,8 @@
 		BA84817824BB27AE00AC9693 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA84817724BB27AE00AC9693 /* TabBarViewController.swift */; };
 		BA84817D24BB31B600AC9693 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA84817B24BB31B600AC9693 /* HomeViewController.swift */; };
 		BA84817E24BB31B600AC9693 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA84817C24BB31B600AC9693 /* HomeViewController.xib */; };
+		BA84818024BB728200AC9693 /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA84817F24BB728200AC9693 /* HomeViewModelTest.swift */; };
+		BA84818224BB729A00AC9693 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA84818124BB729A00AC9693 /* HomeViewModel.swift */; };
 		F7FBD70DC1A79FA0B89764D6 /* Pods_ecomerce_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B7035D7E46FF6C5CFF6C46 /* Pods_ecomerce_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +88,8 @@
 		BA84817724BB27AE00AC9693 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		BA84817B24BB31B600AC9693 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BA84817C24BB31B600AC9693 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		BA84817F24BB728200AC9693 /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		BA84818124BB729A00AC9693 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = "ecomerce-iOSTests/Unit Tests/HomeViewModel.swift"; sourceTree = SOURCE_ROOT; };
 		C8B7035D7E46FF6C5CFF6C46 /* Pods_ecomerce_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecomerce_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -232,6 +236,7 @@
 		BA69A1D224B9E55A0053C135 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				BA84818124BB729A00AC9693 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 				BA69A1E324B9FB9A0053C135 /* ProductAPITest.swift */,
 				BA69A1EF24BA00870053C135 /* ProductProviderTests.swift */,
 				BA69A1F124BA03260053C135 /* ProductListResponseTest.swift */,
+				BA84817F24BB728200AC9693 /* HomeViewModelTest.swift */,
 			);
 			path = "Unit Tests";
 			sourceTree = "<group>";
@@ -544,6 +550,7 @@
 				BA69A1EC24B9FDF80053C135 /* Observable+GetEmit.swift in Sources */,
 				BA69A1A024B9E10C0053C135 /* AppDelegate.swift in Sources */,
 				BA69A1A224B9E10C0053C135 /* SceneDelegate.swift in Sources */,
+				BA84818224BB729A00AC9693 /* HomeViewModel.swift in Sources */,
 				BA69A1EA24B9FCF30053C135 /* GetProduct.swift in Sources */,
 				BA69A1F424BA03640053C135 /* ProductListResponse.swift in Sources */,
 				BA69A1E624B9FBAE0053C135 /* ProductAPI.swift in Sources */,
@@ -558,6 +565,7 @@
 				BA69A1F024BA00870053C135 /* ProductProviderTests.swift in Sources */,
 				BA69A1F224BA03260053C135 /* ProductListResponseTest.swift in Sources */,
 				BA69A1E424B9FB9A0053C135 /* ProductAPITest.swift in Sources */,
+				BA84818024BB728200AC9693 /* HomeViewModelTest.swift in Sources */,
 				BA69A1E824B9FCDA0053C135 /* GetProductTests.swift in Sources */,
 				BA69A1B724B9E10E0053C135 /* ecomerce_iOSTests.swift in Sources */,
 			);

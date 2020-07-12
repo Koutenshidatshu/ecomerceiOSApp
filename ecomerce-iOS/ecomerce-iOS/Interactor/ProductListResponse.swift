@@ -17,13 +17,13 @@ struct Product: Decodable {
     let productPromo: [ProductPromo]
 }
 
-struct Category: Decodable {
+struct Category: Decodable, Equatable {
     let id: Int
     let imageUrl: String
     let name: String
 }
 
-struct ProductPromo: Decodable {
+struct ProductPromo: Decodable, Equatable {
     let id: String
     let imageUrl: String
     let description: String
@@ -50,6 +50,7 @@ extension ProductListRequester {
         }
     }
 }
+
 private struct FailableDecodable: Decodable {
 
     let product: ProductListResponse?

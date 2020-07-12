@@ -9,7 +9,7 @@
 import UIKit
 
 class TabBarViewController: UITabBarController {
-    lazy public var initialTabBar: HomeViewController = {
+    lazy private var initialTabBar: HomeViewController = {
         
         let initialTabBar = HomeViewController()
         

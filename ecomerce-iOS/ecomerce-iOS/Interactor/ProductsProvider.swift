@@ -9,17 +9,19 @@
 import Foundation
 import RxSwift
 
-struct ProductProvider {
+protocol ProductProvider{
+    func get() -> Observable<[ProductListResponse]>
+}
+
+struct ProductProviderImpl: ProductProvider {
     private let service: GetProduct
     
     init(service: GetProduct) {
         self.service = service
     }
     
-    func get() -> Observable<[ProductListResponse]>  {
+    func get() -> Observable<[ProductListResponse]> {
         let requester = ProductListRequester(requestProducts: service.get())
         return requester.request().asObservable()
     }
 }
-
-
