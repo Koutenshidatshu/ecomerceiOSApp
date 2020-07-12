@@ -39,7 +39,7 @@ class ProductListResponseTest: XCTestCase {
                             "id": "6723",
                             "imageUrl": "product promo image",
                             "title": "Nitendo Switch",
-                            "description": "The Nintendo Switch was released ",
+                            "description": "The Nintendo Switch was released",
                             "price": "$340",
                             "loved": 0
                         }
@@ -85,7 +85,18 @@ class ProductListResponseTest: XCTestCase {
         
         XCTAssertNotNil(result)
         XCTAssertGreaterThan(result!.data.category.count, 0)
+        XCTAssertEqual(result!.data.category.first!.id, 21)
+        XCTAssertEqual(result!.data.category.first!.imageUrl, "category image")
+        XCTAssertEqual(result!.data.category.first!.name, "Baju")
+        
+        
         XCTAssertGreaterThan(result!.data.productPromo.count, 0)
+        XCTAssertEqual(result!.data.productPromo.first!.id, "6723")
+        XCTAssertEqual(result!.data.productPromo.first!.imageUrl, "product promo image")
+        XCTAssertEqual(result!.data.productPromo.first!.description, "The Nintendo Switch was released")
+        XCTAssertEqual(result!.data.productPromo.first!.title, "Nitendo Switch")
+        XCTAssertEqual(result!.data.productPromo.first!.price, "$340")
+        XCTAssertEqual(result!.data.productPromo.first!.loved, 0)
     }
     
     func testWithInvalidData() {

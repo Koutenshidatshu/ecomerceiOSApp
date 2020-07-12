@@ -19,10 +19,17 @@ struct Product: Decodable {
 
 struct Category: Decodable {
     let id: Int
+    let imageUrl: String
+    let name: String
 }
 
 struct ProductPromo: Decodable {
     let id: String
+    let imageUrl: String
+    let description: String
+    let title: String
+    let price: String
+    let loved: Int
 }
 
 
