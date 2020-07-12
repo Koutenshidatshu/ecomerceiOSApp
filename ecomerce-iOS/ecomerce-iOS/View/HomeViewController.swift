@@ -12,6 +12,7 @@ import RxSwift
 class HomeViewController: UIViewController {
     private let disposeBag = DisposeBag()
     private let viewModel = HomeViewModelFactory.create()
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -26,16 +27,16 @@ class HomeViewController: UIViewController {
             .asDriver(onErrorDriveWith: .empty())
             .drive(onNext: { [weak self] _ in
                 self?.categoryCollectionView.reloadData()
+                self?.tableView.reloadData()
             })
             .disposed(by: disposeBag)
         
         viewModel.viewLoad()
-        
-//        print("@@@ print ", viewModel.product.firstEmit()?.category)
     }
     
     
     private func registerCell() {
+        tableView.register(UINib.init(nibName: "PromoTableViewCell", bundle: nil), forCellReuseIdentifier: "PromoCell")
         categoryCollectionView
             .register(UINib.init(nibName: "CategoryCollectionViewCell", bundle: nil),
                       forCellWithReuseIdentifier: "CategoryCell")
@@ -44,7 +45,8 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as? CategoryCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell",
+                                                      for: indexPath) as? CategoryCollectionViewCell
         cell?.setupCell(product: viewModel.itemCategory(at: indexPath.row)!)
         cell?.sizeToFit()
         return cell ?? UICollectionViewCell()
@@ -55,3 +57,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return viewModel.getCategoryItemCount()
     }
 }
+
+extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewModel.getPromoItemCount()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PromoCell", for: indexPath) as? PromoTableViewCell
+        cell?.setup(product: viewModel.itemPromo(at: indexPath.row)!)
+        return cell ?? UITableViewCell()
+    }
+    
+    
+}
+

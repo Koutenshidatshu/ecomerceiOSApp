@@ -10,6 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="ecomerce_iOS" customModuleProvider="target">
             <connections>
                 <outlet property="categoryCollectionView" destination="hEV-cS-NvP" id="3sC-n9-qG2"/>
+                <outlet property="tableView" destination="ItB-4L-Ml6" id="gQh-ws-HFZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,12 +36,24 @@
                         <outlet property="delegate" destination="-1" id="NGH-JQ-7Wa"/>
                     </connections>
                 </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ItB-4L-Ml6">
+                    <rect key="frame" x="0.0" y="192" width="414" height="670"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3gM-SD-QFj"/>
+                        <outlet property="delegate" destination="-1" id="9NC-HG-2Pg"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
+                <constraint firstItem="ItB-4L-Ml6" firstAttribute="top" secondItem="hEV-cS-NvP" secondAttribute="bottom" constant="20" id="1R0-ZG-eqP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ItB-4L-Ml6" secondAttribute="bottom" id="3ru-0x-cHj"/>
                 <constraint firstItem="hEV-cS-NvP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="4fy-h3-Yph"/>
+                <constraint firstItem="ItB-4L-Ml6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="APu-yb-xcM"/>
                 <constraint firstItem="hEV-cS-NvP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DIV-dK-m3M"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hEV-cS-NvP" secondAttribute="trailing" id="OI4-Hi-qiE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ItB-4L-Ml6" secondAttribute="trailing" id="nTt-Ph-poZ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="133" y="154"/>
