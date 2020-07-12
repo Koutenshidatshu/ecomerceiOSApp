@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class LoginViewController: UIViewController {
     
@@ -26,7 +27,10 @@ class LoginViewController: UIViewController {
         }
     }
     
-
+    @IBAction func signInTapped(_ sender: Any) {
+        goToHomePage()
+    }
+    
     private func unchecked() {
         checkbox.setImage(UIImage(named: "unchecked"), for: .normal)
     }
@@ -35,5 +39,19 @@ class LoginViewController: UIViewController {
         checkbox.setImage(UIImage(named: "checked"), for: .normal)
     }
     
-    
+    func goToHomePage() {
+        let keyWindow = UIApplication.shared.connectedScenes
+            .filter({$0.activationState == .foregroundActive})
+            .map({$0 as? UIWindowScene})
+            .compactMap({$0})
+            .first?.windows
+            .filter({$0.isKeyWindow}).first
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TabBarViewController")
+        
+        // Set the new rootViewController of the window.
+        // Calling "UIView.transition" below will animate the swap.
+        keyWindow?.rootViewController = vc
+    }
 }
