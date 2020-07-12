@@ -36,6 +36,8 @@
 		BA84818624BB866600AC9693 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA84818424BB866600AC9693 /* CategoryCollectionViewCell.xib */; };
 		BA84818924BB8C7C00AC9693 /* PromoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA84818724BB8C7C00AC9693 /* PromoTableViewCell.swift */; };
 		BA84818A24BB8C7C00AC9693 /* PromoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA84818824BB8C7C00AC9693 /* PromoTableViewCell.xib */; };
+		BA84819624BB967C00AC9693 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA84819424BB967C00AC9693 /* ProductDetailViewController.swift */; };
+		BA84819724BB967C00AC9693 /* ProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA84819524BB967C00AC9693 /* ProductDetailViewController.xib */; };
 		F7FBD70DC1A79FA0B89764D6 /* Pods_ecomerce_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8B7035D7E46FF6C5CFF6C46 /* Pods_ecomerce_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,8 @@
 		BA84818424BB866600AC9693 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		BA84818724BB8C7C00AC9693 /* PromoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTableViewCell.swift; sourceTree = "<group>"; };
 		BA84818824BB8C7C00AC9693 /* PromoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromoTableViewCell.xib; sourceTree = "<group>"; };
+		BA84819424BB967C00AC9693 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		BA84819524BB967C00AC9693 /* ProductDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDetailViewController.xib; sourceTree = "<group>"; };
 		C8B7035D7E46FF6C5CFF6C46 /* Pods_ecomerce_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ecomerce_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -224,6 +228,8 @@
 				BA84818424BB866600AC9693 /* CategoryCollectionViewCell.xib */,
 				BA84818724BB8C7C00AC9693 /* PromoTableViewCell.swift */,
 				BA84818824BB8C7C00AC9693 /* PromoTableViewCell.xib */,
+				BA84819424BB967C00AC9693 /* ProductDetailViewController.swift */,
+				BA84819524BB967C00AC9693 /* ProductDetailViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 				BA69A1AC24B9E10E0053C135 /* LaunchScreen.storyboard in Resources */,
 				BA84818624BB866600AC9693 /* CategoryCollectionViewCell.xib in Resources */,
 				BA69A1A924B9E10E0053C135 /* Assets.xcassets in Resources */,
+				BA84819724BB967C00AC9693 /* ProductDetailViewController.xib in Resources */,
 				BA84818A24BB8C7C00AC9693 /* PromoTableViewCell.xib in Resources */,
 				BA69A1A724B9E10C0053C135 /* Main.storyboard in Resources */,
 				BA84817E24BB31B600AC9693 /* HomeViewController.xib in Resources */,
@@ -559,6 +566,7 @@
 			files = (
 				BA69A1EE24BA00760053C135 /* ProductsProvider.swift in Sources */,
 				BA69A1D724B9EB800053C135 /* LoginViewController.swift in Sources */,
+				BA84819624BB967C00AC9693 /* ProductDetailViewController.swift in Sources */,
 				BA69A1A424B9E10C0053C135 /* ViewController.swift in Sources */,
 				BA84817824BB27AE00AC9693 /* TabBarViewController.swift in Sources */,
 				BA69A1EC24B9FDF80053C135 /* Observable+GetEmit.swift in Sources */,

@@ -74,6 +74,9 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let promo = viewModel.didSelectPromo(at: indexPath.row)
+        let vc = ProductDetailViewController()
+        vc.product = promo
+        present(vc, animated: true, completion: nil)
     }
 }
 
