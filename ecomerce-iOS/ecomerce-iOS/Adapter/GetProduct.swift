@@ -10,7 +10,11 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-struct GetProduct {
+protocol GetProduct {
+    func get() -> Observable<Data>
+}
+
+struct GetProductImpl : GetProduct{
     
     func get() -> Observable<Data> {
         let session = URLSession.shared

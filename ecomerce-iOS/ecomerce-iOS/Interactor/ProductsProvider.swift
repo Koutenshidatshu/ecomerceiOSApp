@@ -7,3 +7,19 @@
 //
 
 import Foundation
+import RxSwift
+
+struct ProductProvider {
+    private let service: GetProduct
+    
+    init(service: GetProduct) {
+        self.service = service
+    }
+    
+    func get() -> Observable<[ProductListResponse]>  {
+        let requester = ProductListRequester(requestProducts: service.get())
+        return requester.request().asObservable()
+    }
+}
+
+

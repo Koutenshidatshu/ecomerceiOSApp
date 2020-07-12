@@ -32,7 +32,6 @@ struct ProductPromo: Decodable {
     let loved: Int
 }
 
-
 struct ProductListRequester {
     enum RequestError : Error {
         case parseFailure

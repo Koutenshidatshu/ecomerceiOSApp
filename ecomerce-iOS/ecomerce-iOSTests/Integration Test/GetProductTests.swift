@@ -32,7 +32,7 @@ class GetProductTests: XCTestCase {
     }
     
     private func createRequestString() -> String {
-        let data = GetProduct().get().firstEmit()!
+        let data = GetProductImpl().get().firstEmit()!
         return String(data: data, encoding: .utf8)!
     }
 }
